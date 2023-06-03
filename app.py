@@ -16,7 +16,7 @@ folderLocationLabel = selectedLocLabel(mainWindow)
 imgLabel = createPreview(mainWindow)
 
 # Button commands
-folderButton.configure(command=lambda: fileSelect(folderLocationLabel))
+folderButton.configure(command=lambda: fileSelect(folderLocationLabel, imgLabel))
 
 # Start application
 mainWindow.mainloop()

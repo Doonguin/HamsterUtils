@@ -28,7 +28,7 @@ def selectedLocLabel(parent):
     return filePathIndic
 
 def createPreview(parent):
-    image_label = tk.Label(parent)
-    image_label.grid(row=2, column=0, padx=20, pady=0, sticky="w")
+    image_label = tk.Label(parent, background="#2b2b3b")
+    image_label.grid(row=2, column=0, columnspan=2, padx=20, pady=0, sticky="w")
 
     return image_label

@@ -32,10 +32,14 @@ def fileSelect(target, imgPreview):
                 messagebox.showerror("No permission", "Program doesn't have permission to change files in this directory. Quick fix: Run as administrator")
                 return
 
-        image = tk.PhotoImage(file=(os.path.join(textures, img[2])))
+        hamsterballpng = os.path.join(textures, "HamsterBall.png")
+        image = tk.PhotoImage(file=hamsterballpng)
+
+        print(hamsterballpng)
 
         target.configure(text=loc)
         
         imgPreview.configure(image=image)
+        imgPreview.image = image
     else:
         messagebox.showerror("Missing file", "Hamsterball.exe could not be found in this folder")
