@@ -1,5 +1,6 @@
 # Imports
 from tkinter import filedialog, messagebox
+import tkinter as tk
 import shutil
 import os
 
@@ -9,7 +10,7 @@ backedup = "textures/backedup"
 ballfiles = ["BallBorder.png", "HamsterBall.png", "HamsterBall-Mip1.png", "HamsterBall-Mip2.png", "HamsterBall-Mip3.png"]
 
 # Commands
-def fileSelect(target):
+def fileSelect(target, imgPreview):
     loc = filedialog.askdirectory()
 
     if loc == "":
@@ -31,8 +32,10 @@ def fileSelect(target):
                 messagebox.showerror("No permission", "Program doesn't have permission to change files in this directory. Quick fix: Run as administrator")
                 return
 
-        target.configure(
-                        text=loc
-                    )
+        image = tk.PhotoImage(file=(os.path.join(textures, img[2])))
+
+        target.configure(text=loc)
+        
+        imgPreview.configure(image=image)
     else:
         messagebox.showerror("Missing file", "Hamsterball.exe could not be found in this folder")
