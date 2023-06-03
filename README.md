@@ -27,5 +27,8 @@ To reset the colors, just hit the "reset" button and everything should return ba
 If for some reason the program did not create a backup, I have bundled the original files with the release and at the top of this README.  
   
 ## Common errors
-This error is cause by the program not having access to the files. To fix this, run the program as an administrator.  
-![image](https://github.com/Doonguin/HamsterUtils/assets/98739915/e45d990f-6bcc-452b-9cc4-c41e6be6e9f1)
+1. This error is cause by the program not having access to the files. To fix this, run the program as an administrator.  
+![image](https://github.com/Doonguin/HamsterUtils/assets/98739915/e45d990f-6bcc-452b-9cc4-c41e6be6e9f1)  
+  
+2. This error is cause by the .ico file not being able to be loaded. Just download the .ico file again if you deleted it or move it back to the same folder where HamsterUtils.exe is located.  
+![image](https://github.com/Doonguin/HamsterUtils/assets/98739915/87b69169-cf34-4b38-864c-126ab571ec6a)  
