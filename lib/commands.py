@@ -1,5 +1,6 @@
 # Imports
-from tkinter import filedialog, messagebox
+from tkinter import filedialog, messagebox, colorchooser
+from lib.filter import recolorImage
 import tkinter as tk
 import shutil
 import os
@@ -35,11 +36,23 @@ def fileSelect(target, imgPreview):
         hamsterballpng = os.path.join(textures, "HamsterBall.png")
         image = tk.PhotoImage(file=hamsterballpng)
 
-        print(hamsterballpng)
-
         target.configure(text=loc)
         
         imgPreview.configure(image=image)
         imgPreview.image = image
     else:
         messagebox.showerror("Missing file", "Hamsterball.exe could not be found in this folder")
+
+def openColorPicker(location):
+    if (location.cget('text') == "[not yet selected]"):
+        messagebox.showerror("No image file", "Please select the main directory first")
+        return
+
+    color = colorchooser.askcolor(title="Select a color")
+    r, g, b = color[0]
+
+    r /= 255.0
+    g /= 255.0
+    b /= 255.0
+
+    recolorImage(r, g, b)
