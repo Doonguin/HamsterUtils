@@ -26,7 +26,21 @@ def createColorButton(parent):
                                 relief="flat",
                                 font=('Arial 12')
                             )
-    colorButton.grid(row=3, column=0, padx=20, pady=0, sticky="w")
+    colorButton.grid(row=3, column=0, padx=20, pady=10, sticky="w")
     colorButton.configure(cursor="hand2")
 
     return colorButton
+
+def createResetButton(parent):
+    resetButton = tk.Button(
+                                parent, 
+                                text="reset", 
+                                background="green", 
+                                foreground="white",
+                                relief="flat",
+                                font=('Arial 12')
+                            )
+    resetButton.grid(row=4, column=0, padx=20, pady=10, sticky="w")
+    resetButton.configure(cursor="hand2")
+
+    return resetButton
