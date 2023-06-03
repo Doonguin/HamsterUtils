@@ -5,7 +5,7 @@ import tkinter as tk
 def createWindow():
     mainWindow = tk.Tk()
 
-    mainWindow.title("Hamster utils")
+    mainWindow.title("HamsterUtils")
     mainWindow.geometry("500x330")
     mainWindow.configure(background="#2b2b3b")
 
