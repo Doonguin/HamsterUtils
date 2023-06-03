@@ -1,4 +1,4 @@
-![Untitled](https://github.com/Doonguin/HamsterUtils/assets/98739915/08a45442-5bb6-4066-be01-dec3803d6487)
+![Untitled](https://github.com/Doonguin/HamsterUtils/assets/98739915/08a45442-5bb6-4066-be01-dec3803d6487)  
 Easy customization for the ball texture in the game Hamsterball by Raptisoft
 
 ## Info to prevent any panic
