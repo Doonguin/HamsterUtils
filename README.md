@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/Doonguin/HamsterUtils/assets/98739915/08a45442-5bb6-4066-be01-dec3803d6487" /> <br>
+  <img src="https://github.com/Doonguin/HamsterUtils/assets/98739915/ca2c8343-e225-4274-863f-3c620d43faae"/> <br>
   Easy customization for the ball texture in the game Hamsterball by Raptisoft
 </p>  
   
