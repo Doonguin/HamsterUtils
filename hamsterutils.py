@@ -7,6 +7,9 @@ from lib.commands import fileSelect, openColorPicker, resetColors
 # Create the window
 mainWindow = createWindow()
 
+# Configure the window
+mainWindow.iconbitmap('./hamsterutils.ico')
+
 # Add buttons to window
 folderButton = createSelectFolderButton(mainWindow)
 colorButton = createColorButton(mainWindow)
